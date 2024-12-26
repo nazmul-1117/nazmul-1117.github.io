@@ -1,0 +1,66 @@
+@import "colorScheme.css";
+
+#home{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--home-bg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10vh 3vw 0vh 3vw;
+}
+
+.home-title{
+    height: 100%;
+    width: 70%;
+    flex-basis: 70%;
+    display: inline-block;
+    padding: 200px 50px;
+}
+
+.home-title  a{
+    display: inline-block;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 9px;
+    border-radius: 5px;
+
+    background: var(--link-bg-color);
+    color: var(--link-color);
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-picture{
+    height: 100%;
+    width: 30%;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-div{
+    /* height: 80%; */
+    height: 500px;
+    width: 100%;
+    max-height: 70vh;
+    min-height: 70vh;
+    border: 2px solid var(--border-primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--gradient-primary);
+    position: relative;
+}
+
+.pic-div img{
+    max-width: 30vw;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    bottom: 0;
+}

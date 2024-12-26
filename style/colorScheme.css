@@ -1,0 +1,33 @@
+:root {
+    /* primary color pallet */
+    --primary-color: #00393d;
+    --secondary-color: #6c757d;
+    
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #ccc;
+    
+    --background-primary: #121212;
+    --background-secondary: #262626;
+    
+    --border-primary-color: #da2100;
+    --border-secondary-color: #000000;
+    
+    /* different pages background */
+    --home-bg: #09001d;
+    --about-bg: #00191d;
+    --education-bg: #000318;
+    --skills-bg: #001304;
+    --projects-bg:  #130010;
+    --contact-bg: #130b00;
+    --footer-bg: #00302d;
+
+    /* gradient color */
+    --gradient-primary: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    --gradient-secondary: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    --gradient-tertiary: linear-gradient(to right, #007bff, #ff009d);
+   
+    /* others custome color */
+    --link-color: #ffffff;
+    --link-bg-color: #9e0042;
+    --title-text-color: #fd006a;
+}
