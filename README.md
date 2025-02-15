@@ -79,8 +79,8 @@ git clone https://github.com/nazmul-1117/nazmul-1117.github.io.git
 ## License
 Code and documentation copyright 2024-2025 the [`Nazmul's Personal Portfolio`][contributors-url] . Code released under the MIT License.
 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
- <!-- [![License: AIS](https://img.shields.io/badge/License-AIS-red.svg)](https://opensource.org/licenses/MIT) -->
+ [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) 
+ [![License: Portfolio](https://img.shields.io/badge/License-Portfolio-red.svg)](LICENSE.txt)
 
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
