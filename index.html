@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style/educations.css">
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/contacts.css">
+    <link rel="stylesheet" href="style/online-courses.css">
+    <link rel="stylesheet" href="style/certificate.css">
 
     <link rel="stylesheet" href="style/responsiv-home.css">
 
@@ -24,8 +26,6 @@
 </head>
 
 <body>
-    <!-- <div class="gg"></div> -->
-    <!-- <div class="dd"></div> -->
     <div class="main-div">
 
         <!-- navbar part -->
@@ -204,128 +204,230 @@
                 <div class="educations-title">
                     <h1>Education and Certificate</h1>
                 </div>
-                <div class="educations-content">
-                    <div class="educations-content-academy">
-                        <div class="bsc academy">
+                <!-- <div class="educations-types">
+                    <p class="tab-link" onclick="tabChanged('educations-content-academy')">Academic Institutions</p>
+                    <p class="tab-link" onclick="tabChanged('educations-content-online')">Online Cources</p>
+                    <p class="tab-link" onclick="tabChanged('educations-content-perticipate')">Perticipation Events</p>
+                    <p class="tab-link" onclick="tabChanged('educations-content-certificate')">Certificates</p>
+                </div> -->
+                <div class="educations-types">
+                    <p class="tab-link" data-tab="educations-content-academy">Academic Institutions</p>
+                    <p class="tab-link" data-tab="educations-content-online">Online Courses</p>
+                    <p class="tab-link" data-tab="educations-content-perticipate">Participation Events</p>
+                    <p class="tab-link" data-tab="educations-content-certificate">Certificates</p>
+                </div>
+
+                <div class="educations-contents">
+                    <div id="educations-content-academy" class="tab-content active">
+                        <div class="academy">
                             <div class="bsc-pic academy-pic">
-                                <a href="https://www.green.edu.bd/" target="_blank"><img src="image/educations/bsc.jpg" alt=""></a>
+                                <a href="https://www.green.edu.bd/" target="_blank"><img src="image/educations/bsc.jpg"
+                                        alt=""></a>
                             </div>
                             <div class="bsc-info academy-content">
                                 <h2>Bachelor of Science | Computer Science and Engineering</h2>
-                                <a href="https://www.green.edu.bd/"><h3>Green University of Bangladesh</h3></a>
+                                <a href="https://www.green.edu.bd/">
+                                    <h3>Green University of Bangladesh</h3>
+                                </a>
                                 <p>2022-2026 | Running...</p>
                             </div>
                         </div>
-                        <div class="hsc academy">
+                        <div class="academy">
                             <div class="hsc-pic academy-pic">
-                                <a href="https://bcsscollege.edu.bd/" target="_blank"><img src="image/educations/hsc.jpg" alt=""></a>
+                                <a href="https://bcsscollege.edu.bd/" target="_blank"><img
+                                        src="image/educations/hsc.jpg" alt=""></a>
                             </div>
                             <div class="hsc-info academy-content">
                                 <h2>Higher Secondary School Certificate | Science</h2>
-                                <a href="https://bcsscollege.edu.bd/"><h3>Bilchalan Shahid Shamsuzzoha Govt. College</h3></a>
+                                <a href="https://bcsscollege.edu.bd/">
+                                    <h3>Bilchalan Shahid Shamsuzzoha Govt. College</h3>
+                                </a>
                                 <p>2018-2020 | Completed</p>
                             </div>
                         </div>
-                        <div class="ssc academy">
+                        <div class="academy">
                             <div class="ssc-pic academy-pic">
-                                <a href="https://tilakpurhs.edu.bd/" target="_blank"><img src="image/educations/ssc.jpeg" alt=""></a></div>
+                                <a href="https://tilakpurhs.edu.bd/" target="_blank"><img
+                                        src="image/educations/ssc.jpeg" alt=""></a>
+                            </div>
                             <div class="hsc-info academy-content">
                                 <h2>Secondary School Certificate | Science</h2>
-                                <a href="https://tilakpurhs.edu.bd/"><h3>Tilakpur High School</h3></a>
+                                <a href="https://tilakpurhs.edu.bd/">
+                                    <h3>Tilakpur High School</h3>
+                                </a>
                                 <p>2016-2017 | Completed</p>
                             </div>
                         </div>
                     </div>
-                    <div class="educations-content-online"></div>
-                </div>
-            </div>
 
-            <!-- projects page -->
-            <div id="projects">
-                <div class="projects-title">
-                    <h1>Projects</h1>
+                    <div id="educations-content-online" class="tab-content">
+                        <h3>Online Courses</h3>
+                        <div class="card-container">
+                            <div class="course-card">
+                                <div class="course-image-container"> <img src="image/online_courses/ml_campusx.jpg"
+                                        alt="Machine Learning" class="course-image">
+                                </div>
+                                <div class="course-details">
+                                    <h3 class="course-title">100 Days of Machine Learning</h3>
+                                    <p class="course-instructor">Nitish Singh</p>
+                                    <p class="course-description">Journey of 100 days machine learning challenges.</p>
+                                    <a href="#" class="course-link">See More</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/seaborn.jpg" alt="Course 2" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Introduction of Seaborn</h3>
+                                    <p class="course-instructor">Indian AI Production</p>
+                                    <p class="course-description">Seaborn in Python</p>
+                                    <a href="https://www.youtube.com/watch?v=2Ys-PQumd_w&list=PLfP3JxW-T70HaBYwsSDadlS3v2VeALgYh"
+                                        class="course-link">View Course</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/matplotlib.avif" alt="Course 1" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Matplotlib Python Tutorial</h3>
+                                    <p class="course-instructor">Great Learning</p>
+                                    <p class="course-description">Matplotlib using Python</p>
+                                    <a href="https://www.youtube.com/watch?v=Iw2H3WT-c1s&t=753s"
+                                        class="course-link">View Course</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/pandas_wsc.jpg" alt="Course 1" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Learn Pandas in 3 Hours</h3>
+                                    <p class="course-instructor">WsCube Tech</p>
+                                    <p class="course-description">Python Pandas Tutorial for Beginners</p>
+                                    <a href="https://www.youtube.com/watch?v=kQQaO5Cm5AI" class="course-link">View
+                                        Course</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/numpy_wsc.jpg" alt="Course 1" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Numpy Full Course in 4 Hours</h3>
+                                    <p class="course-instructor">WsCube Tech</p>
+                                    <p class="course-description">Python Numpy Full Tutorial For Beginners</p>
+                                    <a href="https://www.youtube.com/watch?v=-TYSM0CDA4c" class="course-link">View
+                                        Course</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/math.jpg" alt="Course 1" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Statistics for Data Science</h3>
+                                    <p class="course-instructor">Codanics</p>
+                                    <p class="course-description">Math for Data Science and Machine Learning</p>
+                                    <a href="https://www.youtube.com/watch?v=9jkFZPI5puo" class="course-link">View
+                                        Course</a>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <img src="image/online_courses/python.jpg" alt="Course 1" class="course-image">
+                                <div class="course-details">
+                                    <h3 class="course-title">Python Full Course</h3>
+                                    <p class="course-instructor">Shradha Khapra</p>
+                                    <p class="course-description">Learn Python Basics for Machine Learning and Data Science</p>
+                                    <a href="https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0"
+                                        class="course-link">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="educations-content-perticipate" class="tab-content">Perticipations</div>
+                        <div id="educations-content-certificate" class="tab-content">Certifiacate</div>
+                    </div>
                 </div>
-                <div class="projects-content">
-                    <div class="projects-content-box">
-                        <div class="project1 project-item">
-                            <img src="image/projects/projects3.jpeg" alt="Project Pic">
-                            <div class="project-details">
-                                <h2>MediOxide-An ePrescription</h2>
-                                <p>It's an e-Prescription Management System using JAVA, FXML, CSS programming languages
-                                </p>
+
+                <!-- projects page -->
+                <div id="projects">
+                    <div class="projects-title">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="projects-content">
+                        <div class="projects-content-box">
+                            <div class="project1 project-item">
+                                <img src="image/projects/projects3.jpeg" alt="Project Pic">
+                                <div class="project-details">
+                                    <h2>MediOxide-An ePrescription</h2>
+                                    <p>It's an e-Prescription Management System using JAVA, FXML, CSS programming
+                                        languages
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project2 project-item">
-                            <img src="image/projects/projects5.jpeg" alt="Project Pic">
-                            <div class="project-details">
-                                <h2>Student Management System</h2>
-                                <p>It's a more optimise and advance student Management system usng C/C++ programming
-                                    languages</p>
+                            <div class="project2 project-item">
+                                <img src="image/projects/projects5.jpeg" alt="Project Pic">
+                                <div class="project-details">
+                                    <h2>Student Management System</h2>
+                                    <p>It's a more optimise and advance student Management system usng C/C++ programming
+                                        languages</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project3 project-item">
-                            <img src="image/projects/projects4.jpeg" alt="Project Pic">
-                            <div class="project-details">
-                                <h2>Investment Management System</h2>
-                                <p>Investment Management System is a online platforms where people can invest or
-                                    withdraw their money</p>
+                            <div class="project3 project-item">
+                                <img src="image/projects/projects4.jpeg" alt="Project Pic">
+                                <div class="project-details">
+                                    <h2>Investment Management System</h2>
+                                    <p>Investment Management System is a online platforms where people can invest or
+                                        withdraw their money</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- experiences add will be later. till day happy coding...:) -->
+                <!-- <div id="experiences">Experiences</div> -->
+
+                <div id="contacts">
+                    <div class="contacts-title">
+                        <h1>Contact Me</h1>
+                    </div>
+                    <div class="contacts-content">
+                        <div class="contact-col1">
+                            <img src="image/contacts/contactme.png" alt="">
+                        </div>
+                        <div class="contact-col2">
+                            <form action="" method="post">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="5" placeholder="Write Message"></textarea>
+                                <button type="button" class="btn">Send Me</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- experiences add will be later. till day happy coding...:) -->
-            <!-- <div id="experiences">Experiences</div> -->
-
-            <div id="contacts">
-                <div class="contacts-title">
-                    <h1>Contact Me</h1>
+            <!-- footer part: Link -->
+            <footer class="footer">
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/nazmul.1117" target="_blank" class="social-button">
+                        <img src="image/Social/fb.png" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/nazmul_1117" target="_blank" class="social-button">
+                        <img src="image/Social/x.webp" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/nazmul.1117/" target="_blank" class="social-button">
+                        <img src="image/Social/insta.webp" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/nazmul-1117" target="_blank" class="social-button">
+                        <img src="image/Social/git.webp" alt="GitHub">
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank" class="social-button">
+                        <img src="image/Social/hr.png" alt="HackerRank">
+                    </a>
                 </div>
-                <div class="contacts-content">
-                    <div class="contact-col1">
-                        <img src="image/contacts/contactme.png" alt="">
-                    </div>
-                    <div class="contact-col2">
-                        <form action="" method="post">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="5" placeholder="Write Message"></textarea>
-                            <button type="button" class="btn">Send Me</button>
-                        </form>
-                    </div>
+                <div class="copyright">
+                    <p>© 2024 <a href="http://github.com/nazmul-1117" target="_blank">Md. Nazmul Hossain</a>. All Rights
+                        Reserved.</p>
                 </div>
-            </div>
-
+            </footer>
         </div>
 
-        <!-- footer part: Link -->
-        <footer class="footer">
-            <div class="social-buttons">
-                <a href="https://www.facebook.com/nazmul.1117" target="_blank" class="social-button">
-                    <img src="image/Social/fb.png" alt="Facebook">
-                </a>
-                <a href="https://x.com/nazmul_1117" target="_blank" class="social-button">
-                    <img src="image/Social/x.webp" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/nazmul.1117/" target="_blank" class="social-button">
-                    <img src="image/Social/insta.webp" alt="Instagram">
-                </a>
-                <a href="https://github.com/nazmul-1117" target="_blank" class="social-button">
-                    <img src="image/Social/git.webp" alt="GitHub">
-                </a>
-                <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank" class="social-button">
-                    <img src="image/Social/hr.png" alt="HackerRank">
-                </a>
-            </div>
-            <div class="copyright">
-                <p>© 2024 <a href="http://github.com/nazmul-1117" target="_blank">Md. Nazmul Hossain</a>. All Rights
-                    Reserved.</p>
-            </div>
-        </footer>
-    </div>
-
-    <script src="script/script.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/education.js"></script>
 </body>
 
 </html>
