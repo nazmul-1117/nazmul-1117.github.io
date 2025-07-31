@@ -209,28 +209,4 @@ Feel free to use, modify, and share it — just retain credit.
 | 🧠 Kaggle    | [Md. Nazmul Hossain](https://www.kaggle.com/nazmul1117)               |
 
 ---
-<div style="text-align:center; margin-top:40px;">
-  <span style="
-    color:#00a86b;
-    font-family:Georgia, serif;
-    font-size:42px;
-    font-weight:bold;
-    text-shadow: 1px 1px 3px #aaa;
-    letter-spacing: 2px;
-    animation: glow 1.5s ease-in-out infinite alternate;">
-    ✨Happy Coding ✨
-  </span>
-</div>
-
-<style>
-@keyframes glow {
-  from {
-    text-shadow: 1px 1px 3px #aaa, 0 0 10px #00a86b, 0 0 20px #00a86b;
-  }
-  to {
-    text-shadow: 1px 1px 3px #aaa, 0 0 20px #00cc99, 0 0 30px #00cc99;
-  }
-}
-</style>
-
----
+✨Happy Coding ✨

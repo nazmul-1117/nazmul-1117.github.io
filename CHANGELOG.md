@@ -5,6 +5,18 @@
 ```
 
 
+## 🚀 [3.0.1] – 31/07/2025
+![badge](https://img.shields.io/badge/v3.0.1-31--07--2025-220f2f?logo=Git&logoColor=white)
+
+### ✨ Features
+  - ❌Nothing to Add
+
+### 🐛 Bug Fixes
+- ✅ Fixed CNAME (Remove)
+- ✅ Fixed Readme
+
+---
+
 ## 🚀 [3.0.0] – 31/07/2025
 ![badge](https://img.shields.io/badge/v3.0.0-31--07--2025-228b22?logo=Git&logoColor=white)
 
