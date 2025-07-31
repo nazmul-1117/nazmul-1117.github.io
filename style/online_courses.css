@@ -1,0 +1,91 @@
+#online-courses {
+  padding: 20px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-radius: var(--radius);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.course-card {
+  width: 260px;
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px var(--shadow-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+}
+
+.course-image {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+}
+
+.course-details {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.course-instructor {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.course-description {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.course-link {
+  text-decoration: none;
+  padding: 8px 14px;
+  background-color: var(--primary-color);
+  color: var(--scroll-up-color);
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color var(--transition-speed);
+}
+
+.course-link:hover {
+  background-color: var(--hover-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+
+

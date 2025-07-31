@@ -1,72 +1,165 @@
-#contacts{
-    height: auto;
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--contact-bg);
+/* ===== Contact Section Layout ===== */
+#contacts {
+  min-height: 100vh;
+  padding: 80px 5%;
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+  scroll-margin-top: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* first div */
-.contacts-title{
-    height: 10vh;
-    text-align: center;
-    color: var(--title-text-color);
-    line-height: 10vh;
+/* ===== Title Styling ===== */
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* second div */
-.contacts-content{
-    min-height: 90vh;
-    height: auto;
-    display: flex;
-    flex-basis: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 25px;
-    align-items: center;
+.contact-title h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
-.contact-col1{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
+.contact-title p {
+  font-size: 1em;
+  transition: transform 0.3s ease;
 }
 
-.contact-col1 img{
-    height: 50%;
-    width: 100%;
-    display: block;
+/* ===== Container Layout ===== */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
-.contact-col2{
-    height: 100%;
-    width: 50%;
-    display: flex;
+/* ===== Illustration Image ===== */
+.contact-illustration img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Contact Form Styling ===== */
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* ===== Submit Button ===== */
+.contact-form .btn {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+  color: var(--text-color);
+  box-shadow: 0 0 15px var(--secondary-shadow-color);
+}
+
+/* ===== Responsive Styles ===== */
+@media screen and (max-width: 768px) {
+  .contact-container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 25px;
+    gap: 30px;
+  }
+
+  .contact-title h1 {
+    font-size: 1.8em;
+  }
+
+  .contact-title p {
+    font-size: 0.9em;
+  }
+
+  .contact-form,
+  .contact-illustration img {
+    max-width: 100%;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
 }
 
-.contact-col2 form input,
-.contact-col2 form textarea{
-    width: 90%;
-    height: auto;
-    border: 0;
-    outline: none;
-    background: var(--background-secondary);
-    padding: 15px;
-    margin: 15px 0px;
-    color: var(--primary-text-color);
-    border-radius: 7px;
+@media screen and (max-width: 480px) {
+  .contact-title h1 {
+    font-size: 1.5em;
+  }
+
+  .contact-title p,
+  .contact-form label {
+    font-size: 0.8em;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn {
+    font-size: 0.8em;
+    padding: 10px 14px;
+  }
+
+  .contact-container {
+    gap: 20px;
+  }
 }
 
-.contact-col2 form .btn{
-    display: inline-block;
-    height: 35px;
-    width: 100px;
-    background: var(--link-bg-color);
-    color: var(--link-color);
-    border-radius: 7px;
-    cursor: pointer;
+@media screen and (max-width: 360px) {
+  .contact-title h1 {
+    font-size: 1.3em;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn {
+    font-size: 0.75em;
+    padding: 8px 12px;
+  }
+
+  .contact-form label {
+    font-size: 0.75em;
+  }
+
+  .contact-container {
+    gap: 15px;
+  }
 }

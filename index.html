@@ -4,278 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazmul-Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="image/logo64.png">
+    <meta name="description"
+        content="Nazmul Hossain's personal portfolio showcasing skills in AI, ML, and web development.">
+    <meta property="og:title" content="Nazmul Portfolio" />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:url" content="https://github.com/nazmul-1117/nazmul-1117.github.io" />
+    <meta name="keywords"
+        content="Nazmul, GitHub, portfolio, machine learning, artificial intelligence, data science, competitive programming, Green University of Bangladesh, ML enthusiast, AI developer, Python, deep learning, GitHub profile, nazmul-1117, nazmul1117, nazmul_1117, nazmul.1117, mdnazmulhossain, Bangladesh developer, Dhaka programmer, tech enthusiast, nazmul developer, dev nazmul, nazmul gub, nazmul1117.github.io, nazmul cse">
+
+
+    <title>Nazmul - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/fevicon.ico">
 
     <link rel="stylesheet" href="style/colorScheme.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/skills.css">
     <link rel="stylesheet" href="style/educations.css">
+    <link rel="stylesheet" href="style/online_courses.css">
+    <link rel="stylesheet" href="style/certificate.css">
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/contacts.css">
-    <link rel="stylesheet" href="style/online-courses.css">
-    <link rel="stylesheet" href="style/certificate.css">
-
-    <link rel="stylesheet" href="style/responsiv-home.css">
+    <link rel="stylesheet" href="style/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <div class="main-div">
 
-        <!-- navbar part -->
         <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="image/logo_c2.png" alt="Tomatto's Logo">
+            <a href="#home" class="logo">
+                <img src="assets/logo.png" alt="Logo">
             </a>
+
             <ul class="menu-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#educations">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <!-- <li><a href="#experiences">Experience</a></li> -->
-                <li><a href="#contacts">Contact</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#educations"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#contacts"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
+
+            <!-- Theme Toggle Icon -->
+            <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <!-- Hamburger menu for mobile -->
             <div class="icon-bars" onclick="toggleMenuBar()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
-        <!-- main content part -->
         <div class="main-content">
-            <!-- home page -->
-            <div id="home">
-                <div class="home-title">
-                    <h2>Hi There</h2>
-                    <h1>I am <span>Md. Nazmul Hossain</span></h1>
-                    <h2>I am dedicated student of computer science and engineering in Green University of Bangladesh
-                    </h2>
-                    <a href="#about">About Me</a>
 
-                    <div class="social-buttons">
-                        <a href="https://www.facebook.com/nazmul.1117" target="_blank" class="social-button">
-                            <img src="image/Social/fb.png" alt="Facebook">
-                        </a>
-                        <a href="https://x.com/nazmul_1117" target="_blank" class="social-button">
-                            <img src="image/Social/x.webp" alt="Twitter">
-                        </a>
-                        <a href="https://www.instagram.com/nazmul.1117/" target="_blank" class="social-button">
-                            <img src="image/Social/insta.webp" alt="Instagram">
-                        </a>
-                        <a href="https://github.com/nazmul-1117" target="_blank" class="social-button">
-                            <img src="image/Social/git.webp" alt="GitHub">
-                        </a>
-                        <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank" class="social-button">
-                            <img src="image/Social/hr.png" alt="HackerRank">
-                        </a>
+            <section id="home">
+                <div class="home-content">
+                    <div class="text-section">
+                        <p class="intro">Hi There, I am</p>
+                        <h1 class="name">Md. Nazmul Hossain</h1>
+                        <h2 class="role">An AI & Machine Learning Enthusiast</h2>
+                        <p class="bio">
+                            I'm a passionate Computer Science student with a deep interest in AI/ML. I specialize in AI,
+                            Machine Learning, and Data Science — solving problems with code and creativity. I'm also
+                            passionate about competitive programming, always seeking smarter, faster solutions.
+                        </p>
+
+
+                        <div class="cta-buttons">
+                            <a href="#projects" class="cta-button">Explore Projects</a>
+                            <a href="cv/Nazmul_Hossain_CV.pdf" class="cta-button secondary" target="_blank">Download
+                                CV</a>
+                        </div>
+
+
+                        <div class="social-buttons">
+                            <a href="https://github.com/nazmul-1117" target="_blank" class="social-button"
+                                data-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.kaggle.com/nazmul1117" target="_blank" class="social-button"
+                                data-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                            <a href="https://www.instagram.com/nazmul.1117/" target="_blank" class="social-button"
+                                data-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank"
+                                class="social-button" data-label="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://www.facebook.com/nazmul.1117" target="_blank" class="social-button"
+                                data-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/nazmul_1117" target="_blank" class="social-button" data-label="X"><i
+                                    class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="image-section">
+                        <div class="pic-div">
+                            <img src="assets/image/nazmul/2.png" alt="Nazmul">
+                        </div>
                     </div>
                 </div>
-                <div class="home-picture">
-                    <div class="pic-div">
-                        <img src="image/nazmul/2.png" alt="Icon Image">
-                    </div>
-                </div>
-            </div>
+            </section>
+            <hr>
 
-            <!-- about page -->
-            <div id="about">
+            <!-- Example of an updated section -->
+            <section id="about">
                 <div class="about-title">
                     <h1>About Me</h1>
                 </div>
                 <div class="about-content">
                     <div class="about-picture">
                         <div class="about-picture-circle">
-                            <img src="image/nazmul/4.png" alt="My-Pic">
+                            <img src="assets/image/nazmul/4.png" alt="Nazmul Hossain" />
                         </div>
                     </div>
                     <div class="about-intro">
-                        <h1>I am <span>Md. Nazmul Hossain</span></h1>
+                        <h1>I'm <span>Md. Nazmul Hossain</span></h1>
                         <p>
-                            I'm a dedicated student with a strong foundation in programming languages like C/C++, Java,
-                            PHP,
-                            JavaScript, HTML, and CSS. My passion lies in the exciting fields of artificial
-                            intelligence,
-                            machine learning, and data science.
-                            </br>
-                            </br>
-                            To sharpen my problem-solving skills and practical application of programming, I actively
-                            participate in coding competitions on platforms like HackerRank and Codeforces.
-                            </br>
-                            </br>
-                            Recently, I competed in the IDPC 2024 at GUB and have registered for the ICPC mock contest
-                            at
-                            DIU. These experiences have further honed my ability to think critically, work under
-                            pressure,
-                            and collaborate effectively in a team environment.
+                            I'm a <strong>Computer Science student</strong> specializing in <strong>Machine Learning,
+                                Data Science and Competitive Programming</strong>. I enjoy building intelligent
+                            systems, solving real-world problems through data, and sharing insights via visualization.
                         </p>
-                        </br></br>
-
                         <p>
-                            Email: nazmulonline2002@gmail.com </br>
-                            Phone: 017438861XX
+                            My projects involve regression, classification, clustering, and time series forecasting,
+                            using tools like <strong>Scikit-learn, Pandas, Numpy, Seaborn, Matplotlib and
+                                TensorFlow</strong>. I'm also an active competitive programmer on HackerRank and
+                            participated in the <strong> ICPC Dhaka Regional Contest 2024</strong>
                         </p>
-
-                        <a href="image/virus-cv.jpg" download class="btn">Download CV</a>
-
+                        <p>
+                            <strong>Email:</strong> 223002089@student.green.ac.bd<br />
+                            <strong>Location:</strong> Dhaka, Bangladesh
+                        </p>
+                        <a href="assets/cv_nazmul.pdf" download class="btn stylish-btn">Download CV</a>
                     </div>
                 </div>
+            </section>
+            <hr>
 
-            </div>
-
-            <!-- skills page -->
-            <div id="skills">
+            <!-- Skills Section -->
+            <section id="skills">
                 <div class="skills-title">
-                    <h1>Skills and Ability</h1>
+                    <h1>Technical Skills</h1>
                 </div>
                 <div class="skills-content">
-                    <div class="skills-content-box">
-                        <div class="programming-language">
-                            <img src="image/skills/c.png" alt="">
-                            <p>C</p>
+                    <!-- Languages & Databases -->
+                    <div class="skill-category" data-aos="fade-down" data-aos-duration="1200">
+                        <h3>Languages & Databases</h3>
+                        <div class="skills-content-box">
+                            <div class="skill-item"><img src="assets/image/skills/python.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/java.png" alt="Java">
+                                <p>Java</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/c++.png" alt="C++">
+                                <p>C/C++</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/js.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/mysql.png" alt="MySQL">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/bash.png" alt="Bash">
+                                <p>Bash</p>
+                            </div>
                         </div>
-                        <div class="programming-language">
-                            <img src="image/skills/c++.png" alt="">
-                            <p>C++</p>
+                    </div>
+
+                    <!-- ML/DS Libraries -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-duration="1200">
+                        <h3>ML/DS Libraries</h3>
+                        <div class="skills-content-box">
+                            <div class="skill-item"><img src="assets/image/skills/numpy.png" alt="NumPy">
+                                <p>NumPy</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/pandas.svg" alt="Pandas">
+                                <p>Pandas</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/matplotlib.png" alt="Matplotlib">
+                                <p>Matplotlib</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/seaborn.svg" alt="Seaborn">
+                                <p>Seaborn</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/scikit-learn.png" alt="Scikit-learn">
+                                <p>Scikit-learn</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/tensorflow.png" alt="TensorFlow">
+                                <p>TensorFlow</p>
+                            </div>
                         </div>
-                        <div class="programming-language">
-                            <img src="image/skills/java.png" alt="">
-                            <p>Java</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/python.png" alt="">
-                            <p>Python</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/dsa.png" alt="">
-                            <p>DSA</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/js.png" alt="">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/html5.png" alt="">
-                            <p>HTML5</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/css3.png" alt="">
-                            <p>CSS3</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/php.png" alt="">
-                            <p>PHP</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/mysql.png" alt="">
-                            <p>MySQL</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/x86.png" alt="">
-                            <p>Assembly x86</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/git.png" alt="">
-                            <p>Git/Git Bash</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/github.png" alt="">
-                            <p>GitHub</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/vsCode.png" alt="">
-                            <p>VS Code</p>
-                        </div>
-                        <div class="programming-language">
-                            <img src="image/skills/xml.png" alt="">
-                            <p>XML</p>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category" data-aos="fade-down" data-aos-duration="1200">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skills-content-box">
+                            <div class="skill-item"><img src="assets/image/skills/git.png" alt="Git">
+                                <p>Git</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/github.png" alt="GitHub">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/vsCode.png" alt="VS Code">
+                                <p>VS Code</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/Jupyter.svg" alt="Jupyter">
+                                <p>Jupyter</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/streamlit.png" alt="Streamlit">
+                                <p>Streamlit</p>
+                            </div>
+                            <div class="skill-item"><img src="assets/image/skills/linux.png" alt="Linux">
+                                <p>Linux</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <hr>
 
-            <!-- Education page -->
-            <div id="educations">
+            <section id="educations">
                 <div class="educations-title">
-                    <h1>Education and Certificate</h1>
+                    <h1>Education & Certificates</h1>
                 </div>
-                <!-- <div class="educations-types">
-                    <p class="tab-link" onclick="tabChanged('educations-content-academy')">Academic Institutions</p>
-                    <p class="tab-link" onclick="tabChanged('educations-content-online')">Online Cources</p>
-                    <p class="tab-link" onclick="tabChanged('educations-content-perticipate')">Perticipation Events</p>
-                    <p class="tab-link" onclick="tabChanged('educations-content-certificate')">Certificates</p>
-                </div> -->
                 <div class="educations-types">
-                    <p class="tab-link" data-tab="educations-content-academy">Academic Institutions</p>
-                    <p class="tab-link" data-tab="educations-content-online">Online Courses</p>
-                    <p class="tab-link" data-tab="educations-content-perticipate">Participation Events</p>
-                    <p class="tab-link" data-tab="educations-content-certificate">Certificates</p>
+                    <p class="tab-link" data-tab="academy">Academic</p>
+                    <p class="tab-link" data-tab="online-courses">Online Courses</p>
+                    <p class="tab-link" data-tab="certificates">Certificates</p>
                 </div>
-
                 <div class="educations-contents">
-                    <div id="educations-content-academy" class="tab-content active">
-                        <div class="academy">
+                    <div id="academy" class="tab-content">
+                        <div class="academy" data-aos="fade-right" data-aos-duration="1200">
                             <div class="bsc-pic academy-pic">
-                                <a href="https://www.green.edu.bd/" target="_blank"><img src="image/educations/bsc.jpg"
-                                        alt=""></a>
+                                <a href="https://www.green.edu.bd/" target="_blank">
+                                    <img src="assets/image/educations/bsc.jpg" alt="GUB Logo">
+                                </a>
                             </div>
                             <div class="bsc-info academy-content">
-                                <h2>Bachelor of Science | Computer Science and Engineering</h2>
+                                <h2>Bachelor of Science in Computer Science and Engineering</h2>
                                 <a href="https://www.green.edu.bd/">
                                     <h3>Green University of Bangladesh</h3>
                                 </a>
-                                <p>2022-2026 | Running...</p>
+                                <p>2022 - 2026 | Running...</p>
                             </div>
                         </div>
-                        <div class="academy">
-                            <div class="hsc-pic academy-pic">
-                                <a href="https://bcsscollege.edu.bd/" target="_blank"><img
-                                        src="image/educations/hsc.jpg" alt=""></a>
+
+                        <div class="academy" data-aos="fade-left" data-aos-duration="1200">
+                            <div class="bsc-pic academy-pic">
+                                <a href="https://bcsscollege.edu.bd/" target="_blank">
+                                    <img src="assets/image/educations/hsc.jpg" alt="HSC Logo">
+                                </a>
                             </div>
-                            <div class="hsc-info academy-content">
-                                <h2>Higher Secondary School Certificate | Science</h2>
+                            <div class="bsc-info academy-content">
+                                <h2>Higher Secondary Certificate | Science</h2>
                                 <a href="https://bcsscollege.edu.bd/">
                                     <h3>Bilchalan Shahid Shamsuzzoha Govt. College</h3>
                                 </a>
-                                <p>2018-2020 | Completed</p>
+                                <p>2018 - 2020 | Completed</p>
                             </div>
                         </div>
-                        <div class="academy">
-                            <div class="ssc-pic academy-pic">
-                                <a href="https://tilakpurhs.edu.bd/" target="_blank"><img
-                                        src="image/educations/ssc.jpeg" alt=""></a>
+
+                        <div class="academy" data-aos="fade-right" data-aos-duration="1200">
+                            <div class="bsc-pic academy-pic">
+                                <a href="https://tilakpurhs.edu.bd/" target="_blank">
+                                    <img src="assets/image/educations/ssc.jpeg" alt="SSC Logo">
+                                </a>
                             </div>
-                            <div class="hsc-info academy-content">
+                            <div class="bsc-info academy-content">
                                 <h2>Secondary School Certificate | Science</h2>
                                 <a href="https://tilakpurhs.edu.bd/">
                                     <h3>Tilakpur High School</h3>
                                 </a>
-                                <p>2016-2017 | Completed</p>
+                                <p>2013 - 2018 | Completed</p>
                             </div>
                         </div>
                     </div>
 
-                    <div id="educations-content-online" class="tab-content">
+                    <div id="online-courses" class="tab-content">
                         <h3>Online Courses</h3>
                         <div class="card-container">
                             <div class="course-card">
-                                <div class="course-image-container"> <img src="image/online_courses/ml_campusx.jpg"
-                                        alt="Machine Learning" class="course-image">
-                                </div>
+                                <img src="assets/image/online_courses/ml_campusx.jpg" alt="Machine Learning Course"
+                                    class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">100 Days of Machine Learning</h3>
-                                    <p class="course-instructor">Nitish Singh</p>
-                                    <p class="course-description">Journey of 100 days machine learning challenges.</p>
-                                    <a href="#" class="course-link">See More</a>
+                                    <p class="course-instructor">Nitish Singh (CampusX)</p>
+                                    <p class="course-description">Hands-on journey through ML concepts and algorithms.
+                                    </p>
+                                    <a href="#" class="course-link">View Course</a>
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/seaborn.jpg" alt="Course 2" class="course-image">
+                                <img src="assets/image/online_courses/seaborn.jpg" alt="Course 2" class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Introduction of Seaborn</h3>
                                     <p class="course-instructor">Indian AI Production</p>
@@ -285,7 +311,8 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/matplotlib.avif" alt="Course 1" class="course-image">
+                                <img src="assets/image/online_courses/matplotlib.avif" alt="Course 1"
+                                    class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Matplotlib Python Tutorial</h3>
                                     <p class="course-instructor">Great Learning</p>
@@ -295,7 +322,8 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/pandas_wsc.jpg" alt="Course 1" class="course-image">
+                                <img src="assets/image/online_courses/pandas_wsc.jpg" alt="Course 1"
+                                    class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Learn Pandas in 3 Hours</h3>
                                     <p class="course-instructor">WsCube Tech</p>
@@ -305,7 +333,8 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/numpy_wsc.jpg" alt="Course 1" class="course-image">
+                                <img src="assets/image/online_courses/numpy_wsc.jpg" alt="Course 1"
+                                    class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Numpy Full Course in 4 Hours</h3>
                                     <p class="course-instructor">WsCube Tech</p>
@@ -315,7 +344,7 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/math.jpg" alt="Course 1" class="course-image">
+                                <img src="assets/image/online_courses/math.jpg" alt="Course 1" class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Statistics for Data Science</h3>
                                     <p class="course-instructor">Codanics</p>
@@ -325,109 +354,297 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img src="image/online_courses/python.jpg" alt="Course 1" class="course-image">
+                                <img src="assets/image/online_courses/python.jpg" alt="Course 1" class="course-image">
                                 <div class="course-details">
                                     <h3 class="course-title">Python Full Course</h3>
                                     <p class="course-instructor">Shradha Khapra</p>
-                                    <p class="course-description">Learn Python Basics for Machine Learning and Data Science</p>
+                                    <p class="course-description">Learn Python Basics for Machine Learning and Data
+                                        Science</p>
                                     <a href="https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0"
                                         class="course-link">View Course</a>
                                 </div>
                             </div>
-                        </div>
-                        <div id="educations-content-perticipate" class="tab-content">Perticipations</div>
-                        <div id="educations-content-certificate" class="tab-content">Certifiacate</div>
-                    </div>
-                </div>
 
-                <!-- projects page -->
-                <div id="projects">
-                    <div class="projects-title">
-                        <h1>Projects</h1>
+                        </div>
                     </div>
-                    <div class="projects-content">
-                        <div class="projects-content-box">
-                            <div class="project1 project-item">
-                                <img src="image/projects/projects3.jpeg" alt="Project Pic">
-                                <div class="project-details">
-                                    <h2>MediOxide-An ePrescription</h2>
-                                    <p>It's an e-Prescription Management System using JAVA, FXML, CSS programming
-                                        languages
-                                    </p>
+
+                    <div id="certificates" class="tab-content">
+                        <h3>Certificates</h3>
+                        <div class="certificate-container">
+                            <!-- CampusX ML Course -->
+                            <div class="certificate-card">
+                                <img src="assets/image/certificates/certificate1.jpg" alt="100 Days of ML - CampusX">
+                                <div class="certificate-info">
+                                    <h4>100 Days of Machine Learning</h4>
+                                    <p>CampusX · Issued June 2025</p>
+                                    <a href="#" class="certificate-link">View Certificate</a>
                                 </div>
                             </div>
-                            <div class="project2 project-item">
-                                <img src="image/projects/projects5.jpeg" alt="Project Pic">
-                                <div class="project-details">
-                                    <h2>Student Management System</h2>
-                                    <p>It's a more optimise and advance student Management system usng C/C++ programming
-                                        languages</p>
+
+                            <!-- Meta Front-End Certificate -->
+                            <div class="certificate-card">
+                                <img src="assets/image/certificates/certificate2.webp" alt="Meta Front-End Certificate">
+                                <div class="certificate-info">
+                                    <h4>Statistics for Data Science</h4>
+                                    <p>Codanics · Issued Feb 2024</p>
+                                    <a href="#" class="certificate-link">View Certificate</a>
                                 </div>
                             </div>
-                            <div class="project3 project-item">
-                                <img src="image/projects/projects4.jpeg" alt="Project Pic">
-                                <div class="project-details">
-                                    <h2>Investment Management System</h2>
-                                    <p>Investment Management System is a online platforms where people can invest or
-                                        withdraw their money</p>
+
+                            <!-- HackerRank Python Badge -->
+                            <div class="certificate-card">
+                                <img src="assets/image/certificates/certificate3.jpg" alt="HackerRank Python Badge">
+                                <div class="certificate-info">
+                                    <h4>Python (Basic) Certificate</h4>
+                                    <p>Apna College · Issued Dec 2024</p>
+                                    <a href="#" class="certificate-link">View Certificate</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                </div>
+            </section>
+            <hr>
+
+            <section id="projects">
+                <div class="projects-title">
+                    <h1>My Projects</h1>
                 </div>
 
-                <!-- experiences add will be later. till day happy coding...:) -->
-                <!-- <div id="experiences">Experiences</div> -->
+                <div class="projects-content-box" data-aos="flip-down" data-aos-duration="2000">
 
-                <div id="contacts">
-                    <div class="contacts-title">
-                        <h1>Contact Me</h1>
-                    </div>
-                    <div class="contacts-content">
-                        <div class="contact-col1">
-                            <img src="image/contacts/contactme.png" alt="">
+                    <!-- Project: Titanic Survival -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/titanic.webp" alt="Titanic ML prediction app">
+                        <div class="project-details">
+                            <h3>Titanic Survival Story</h3>
+                            <p>Predicts survival of Titanic passengers using ML classifiers like logistic regression,
+                                random forest, and boosting.</p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/Machine-Learning-Projects/tree/main/001-Titanic_Survival_Story"
+                                    class="btn">Live Demo</a>
+                                <a href="https://github.com/nazmul-1117/Machine-Learning-Projects/tree/main/001-Titanic_Survival_Story"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
                         </div>
-                        <div class="contact-col2">
-                            <form action="" method="post">
-                                <input type="text" name="Name" placeholder="Your Name" required>
-                                <input type="email" name="Email" placeholder="Your Email" required>
-                                <textarea name="Message" rows="5" placeholder="Write Message"></textarea>
-                                <button type="button" class="btn">Send Me</button>
-                            </form>
+                    </div>
+
+                    <!-- Project: Customer Churn -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/churn.webp" alt="Churn prediction ML app">
+                        <div class="project-details">
+                            <h3>Customer Churn Prediction</h3>
+                            <p>Forecasts customer attrition using ML classifiers with behavioral and subscription data.
+                            </p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/Machine-Learning-Projects/tree/main/002-Customer_Churn_Prediction"
+                                    class="btn">Live Demo</a>
+                                <a href="https://github.com/nazmul-1117/Machine-Learning-Projects/tree/main/002-Customer_Churn_Prediction"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Project: Student Management -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/SMS.jpeg" alt="Student Management System console app">
+                        <div class="project-details">
+                            <h3>Student Management System</h3>
+                            <p>C++ console-based application for managing student records efficiently.</p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/C++-v20-00599C?style=flat&logo=cplusplus&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/File%20I%2FO-v22-4CAF50?style=flat&logo=gnubash&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Data%20Structures-v1.0-F57C00?style=flat&logo=codefactor&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/Algorithms-v1.0-3F51B5?style=flat&logo=codeforces&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/OOP-v1.0-9C27B0?style=flat&logo=abstract&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/University-Projects/tree/main/Data_Structure/Student_Management_System"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Agriculture Info Service -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/ais.jpeg" alt="Agriculture Service web app">
+                        <div class="project-details">
+                            <h3>Agriculture Information Service</h3>
+                            <p>HTML/CSS/PHP based service platform for farming community and agricultural support.</p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/HTML-v5-E34F26?style=flat&logo=html5&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/CSS-v3-1572B6?style=flat&logo=fandom&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
+                                <img
+                                    src="https://img.shields.io/badge/PHP-v8.4-777BB4?style=flat&logo=php&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/MySQL-v9.4.0-4479A1?style=flat&logo=mysql&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/Agriculture-Information-Service"
+                                    class="btn">Live Site</a>
+                                <a href="https://github.com/nazmul-1117/Agriculture-Information-Service"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: MediOxide -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/medioxide.png" alt="MediOxide JavaFX prescription app">
+                        <div class="project-details">
+                            <h3>MediOxide - ePrescription</h3>
+                            <p>Desktop app built with JavaFX to streamline prescription handling and patient data
+                                management.</p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/Java-JDK24-007396?style=flat&logo=fandom&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/JavaFX-v22-009688?style=flat&logo=openjdk&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/CSS-v3-264de4?style=flat&logo=fandom&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/University-Projects/tree/main/Object_Oriented_Programming/MediOxide-An%20ePrescription%20Management%20System"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: BitGuard -->
+                    <div class="project-item">
+                        <img src="assets/image/projects/bitguard.jpeg" alt="BitGuard error detection JavaFX toolkit">
+                        <div class="project-details">
+                            <h3>BitGuard – Error Detection Toolkit</h3>
+                            <p>Error detection and correction toolkit built with JavaFX and FXML, implementing Hamming
+                                codes and parity checks.</p>
+                            <div class="project-tech">
+                                <img
+                                    src="https://img.shields.io/badge/JavaFX-v22-009688?style=flat&logo=openjdk&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/FXML-v22-6A1B9A?style=flat&logo=fandom&logoColor=white">
+                                <img
+                                    src="https://img.shields.io/badge/CSS-v3-264de4?style=flat&logo=fandom&logoColor=white">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nazmul-1117/BitGuard-an-Error-Detection-and-Correction-Toolkit"
+                                    class="btn">Live Demo</a>
+                                <a href="https://github.com/nazmul-1117/BitGuard-an-Error-Detection-and-Correction-Toolkit"
+                                    class="btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+
+            <section id="contacts">
+                <div class="contact-title">
+                    <h1>Contact Me</h1>
+                    <p
+                        style="font-size: 1.1em; font-weight: 500; color: var(--text-color); text-align: center; margin: 30px 0;">
+                        🤝 <strong>Let’s connect!</strong><br>
+                        Whether you’re up for a collaboration, have a question, or just want to say hi — I’d love to
+                        hear from you.
+                    </p>
                 </div>
 
-            </div>
+                <div class="contact-container">
+                    <div class="contact-illustration" data-aos="fade-right" data-aos-duration="1500">
+                        <img src="assets/image/contacts/contact.jpg"
+                            alt="Illustration representing contact or communication" />
+                    </div>
 
-            <!-- footer part: Link -->
-            <footer class="footer">
-                <div class="social-buttons">
-                    <a href="https://www.facebook.com/nazmul.1117" target="_blank" class="social-button">
-                        <img src="image/Social/fb.png" alt="Facebook">
-                    </a>
-                    <a href="https://x.com/nazmul_1117" target="_blank" class="social-button">
-                        <img src="image/Social/x.webp" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com/nazmul.1117/" target="_blank" class="social-button">
-                        <img src="image/Social/insta.webp" alt="Instagram">
-                    </a>
-                    <a href="https://github.com/nazmul-1117" target="_blank" class="social-button">
-                        <img src="image/Social/git.webp" alt="GitHub">
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank" class="social-button">
-                        <img src="image/Social/hr.png" alt="HackerRank">
-                    </a>
+                    <div class="contact-form" data-aos="fade-left" data-aos-duration="1500">
+                        <form action="https://formspree.io/f/your_form_id" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required />
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required />
+
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="copyright">
-                    <p>© 2024 <a href="http://github.com/nazmul-1117" target="_blank">Md. Nazmul Hossain</a>. All Rights
-                        Reserved.</p>
-                </div>
-            </footer>
+            </section>
+            <hr>
+
         </div>
 
-        <script src="script/script.js"></script>
-        <script src="script/education.js"></script>
+        <footer class="footer">
+            <div class="scroll-up" onclick="scrollToTop()">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <div class="footer-row">
+                <!-- Address -->
+                <div class="address">
+                    📍 Dhaka, Bangladesh · <a href="mailto:223002089@student.green.ac.bd">nazmul-1117.github.io</a>
+                </div>
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    © 2025 <a href="https://github.com/nazmul-1117" target="_blank"> Md. Nazmul Hossain</a>. All Rights
+                    Reserved.
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-buttons">
+                    <a href="https://github.com/nazmul-1117" target="_blank"><img src="assets/image/Social/github.svg"
+                            alt="GitHub"></a>
+                    <a href="https://www.kaggle.com/nazmul1117" target="_blank"><img
+                            src="assets/image/Social/kaggle.svg" alt="Kaggle"></a>
+                    <a href="https://www.instagram.com/nazmul.1117/" target="_blank"><img
+                            src="assets/image/Social/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank"><img
+                            src="assets/image/Social/hackerrank.svg" alt="HackerRank"></a>
+                    <a href="https://www.facebook.com/nazmul.1117" target="_blank"><img
+                            src="assets/image/Social/facebook.svg" alt="Facebook"></a>
+                    <a href="https://x.com/nazmul_1117" target="_blank"><img src="assets/image/Social/x.svg"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/themeToggle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>AOS.init();</script>
+
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+# Ignore JavaScript files
+script.js
+
+# VSCode settings folder
+.vscode/
+
+# CSS files
+responsiv_home.css
+
+# README files
+README2.md
+README3.md
+
+# Project directories
+backup/
+component/
+Gemini/

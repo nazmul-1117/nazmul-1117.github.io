@@ -1,75 +1,127 @@
 @import "colorScheme.css";
 
-#skills{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--skills-bg);
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  padding: 80px 5%;
+  scroll-margin-top: 20px;
 }
 
-.skills-title{
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    color: var(--title-text-color);
-    line-height: 10vh;
+.skills-title h1 {
+    margin-bottom: 50px;
+    color: var(--text-color);
+    transition: color 0.4s ease;
 }
 
-.skills-content{
+.skills-content {
     display: flex;
-    flex-basis: 100%;
-    height: 90vh;
+    flex-wrap: wrap;
+    /* Allow categories to wrap */
     justify-content: center;
-    padding: 5vh 1vw;
+    gap: 40px;
+    /* Space between skill categories */
 }
 
-.skills-content-box{
-    display: flex;
-    width: 90%;
-    height: 90%;
-    background: var(--primary-color);
-    flex-wrap: wrap;
-    padding: 2vh;
+.skill-category {
+    background-color: var(--card-background);
     border-radius: 10px;
-    gap: 2vw;
-    justify-content: space-evenly;
-}
-
-.skills-content-box > div{
-    flex-wrap: wrap;
-    flex-basis: 15%;
-    width: 15%;
-    height: 20%;
-    background: var(--primary-color);
-    border-radius: 10px;
-
-    box-shadow: -5px -5px 10px #014920,
-                5px 5px 10px #00414d,
-                inset -2px -2px 2px #00724c,
-                inset 2px 2px 2px #11131b;
-}
-
-.programming-language{
-    padding: 5px;
-}
-
-.programming-language img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 50%;
-    height: 70%;
-    padding: 2px;
-}
-
-.programming-language p{
-    height: 30%;
-    font-size: 1rem;
-    margin-top: 5px;
+    padding: 30px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    flex: 1;
+    /* Allow categories to grow */
+    min-width: 280px;
+    /* Minimum width for category */
+    max-width: 350px;
+    /* Max width for consistency */
     text-align: center;
 }
 
-.programming-language:hover  {
-    background: #4b0032;
-    cursor: pointer;
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 1.7em;
+}
+
+.skills-content-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Responsive grid for skills */
+    gap: 20px;
+    /* Space between individual skill items */
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.skill-item img {
+    width: 50px;
+    /* Icon size */
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Skills Section */
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+        /* Stack categories vertically */
+        align-items: center;
+    }
+
+    .skill-category {
+        min-width: unset;
+        /* Remove min-width to allow full width on small screens */
+        width: 90%;
+        /* Take up more width */
+        max-width: 400px;
+        /* Limit max width on smaller screens */
+        padding: 25px;
+    }
+
+    .skills-content-box {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        /* Smaller icons/text */
+    }
+
+    .skill-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill-item p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-category h3 {
+        font-size: 1.5em;
+    }
+
+    .skills-content-box {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
 }
