@@ -5,6 +5,18 @@
 ```
 
 ## 🚀 [3.0.2] – 02/08/2025
+![badge](https://img.shields.io/badge/v3.0.3-02--08--2025-yellow?logo=Git&logoColor=white)
+
+### ✨ Features
+  - ❌Nothing to Add
+
+### 🐛 Bug Fixes
+- ✅ Fixed Favicon Image
+
+---
+
+
+## 🚀 [3.0.2] – 02/08/2025
 ![badge](https://img.shields.io/badge/v3.0.2-02--08--2025-blue?logo=Git&logoColor=white)
 
 ### ✨ Features
