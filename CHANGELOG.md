@@ -4,6 +4,18 @@
 - You can find updated to earlier
 ```
 
+## 🚀 [3.0.2] – 02/08/2025
+![badge](https://img.shields.io/badge/v3.0.2-02--08--2025-blue?logo=Git&logoColor=white)
+
+### ✨ Features
+  - ❌Nothing to Add
+
+### 🐛 Bug Fixes
+- ✅ Fixed Favicon Image
+- ✅ Fixed Certificate CSS
+
+---
+
 
 ## 🚀 [3.0.1] – 31/07/2025
 ![badge](https://img.shields.io/badge/v3.0.1-31--07--2025-220f2f?logo=Git&logoColor=white)
