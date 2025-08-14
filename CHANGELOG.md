@@ -4,7 +4,20 @@
 - You can find updated to earlier
 ```
 
-## 🚀 [3.0.2] – 02/08/2025
+## 🚀 [3.0.4] – 14/08/2025
+![badge](https://img.shields.io/badge/v3.0.4-14--08--2025-2f7270?logo=Git&logoColor=white)
+
+### ✨ Features
+  - 🌿 Add new Logo
+  - 🧾 Add Resume PDF
+
+### 🐛 Bug Fixes
+- ✅ Fixed Old Image
+
+---
+
+
+## 🚀 [3.0.3] – 02/08/2025
 ![badge](https://img.shields.io/badge/v3.0.3-02--08--2025-yellow?logo=Git&logoColor=white)
 
 ### ✨ Features
