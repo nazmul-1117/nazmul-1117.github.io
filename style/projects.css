@@ -167,7 +167,7 @@
   text-decoration: none;
   padding: 10px 16px;
   background-color: var(--primary-color);
-  color: #262626;
+  color: var(--accent-color);
   border-radius: 8px;
   font-weight: 600;
   font-size: var(--font-size-sm);
@@ -188,7 +188,7 @@
 
 .project-links a.btn-secondary {
   background-color: var(--hover-color);
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
 .project-links a.btn-secondary:hover {
@@ -208,6 +208,14 @@
   background-color: var(--accent-color);
   z-index: -1;
   transition: width 0.3s ease;
+}
+
+.btn-secondary{
+  background-color: var(--hover-color);
+}
+
+.btn-secondary::after {
+  background-color: var(--hover-color);
 }
 
 /* === Entry Animation === */

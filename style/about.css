@@ -89,6 +89,21 @@
   color: var(--text-color);
 }
 
+.contact-info a {
+  color: var(--link-color);          /* calm professional blue */
+  text-decoration: none;   /* remove default underline */
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info a:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
 
 /* ===== Responsive Breakpoints ===== */
 @media (max-width: 992px) {

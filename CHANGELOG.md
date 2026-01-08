@@ -4,6 +4,20 @@
 - You can find updated to earlier
 ```
 
+## 🚀 [3.0.5] – 08/01/2026
+![badge](https://img.shields.io/badge/v3.0.5-08--01--2026-207fef?logo=Git&logoColor=white)
+
+### ✨ Features
+  - 🌿 Update information
+  - 🧾 Add more skills
+
+### 🐛 Bug Fixes
+- ✅ Fixed scroll up button
+- ✅ Button Color
+- ✅ Remove Unnecessary Button
+
+---
+
 ## 🚀 [3.0.4] – 14/08/2025
 ![badge](https://img.shields.io/badge/v3.0.4-14--08--2025-2f7270?logo=Git&logoColor=white)
 

@@ -45,7 +45,7 @@ if (scrollUp) {
 
 // === Typing Text Animation ===
 const typingText = document.querySelector('.text-section h2:last-of-type');
-const phrases = ["An AI & Machine Learning Enthusiast", "Data Explorer", "Problem Solver"];
+const phrases = ["ML & Deep Learning Engineer", "GenAI & RAG Enthusiast", "Problem Solver"];
 let phraseIndex = 0;
 let charIndex = 0;
 

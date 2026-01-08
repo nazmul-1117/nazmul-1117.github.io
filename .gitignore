@@ -19,3 +19,13 @@ logo/
 
 # Manifest files
 *.webmanifest
+
+# Optional: OS-generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Node modules if you use Node
+node_modules/
+
+# Optional: Logs
+*.log
