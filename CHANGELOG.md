@@ -4,6 +4,56 @@
 - You can find updated to earlier
 ```
 
+---
+
+## 🚀 [3.1.0] – May 10, 2026
+
+![badge](https://img.shields.io/badge/v3.1.0-08--10--2026-408A71?logo=Git\&logoColor=white)
+
+### ✨ Features
+
+* 🖼️ Added new project, profile, and contact section images
+* 🎨 Migrated multiple skill icons from PNG to optimized SVG format
+* 📁 Added new assets under:
+
+  * `assets/cv`
+  * `assets/image/projects`
+  * `assets/image/skills`
+  * `assets/image/contacts`
+  * `assets/image/nazmul`
+* ⚡ Enhanced visual consistency across skills, projects, and contact sections
+* 🧩 Updated frontend integration for newly added assets
+
+### 🎨 UI Improvements
+
+* 💅 Refined styling in:
+
+  * `about.css`
+  * `contacts.css`
+  * `home.css`
+  * `projects.css`
+  * `skills.css`
+* 📱 Improved responsive asset rendering and section appearance
+* ✨ Updated project and profile presentation visuals
+
+### 🧹 Cleanup & Optimization
+
+* 🗑️ Removed outdated images and unused assets
+* 📄 Removed old `Nazmul_Hossain_CV.pdf`
+* 🔄 Updated existing image resources including `c++.png`
+* ⚙️ Minor updates to:
+
+  * `index.html`
+  * `js/main.js`
+
+### 🐛 Bug Fixes
+
+* ✅ Fixed inconsistent icon rendering
+* ✅ Improved asset loading and UI alignment
+* ✅ Resolved outdated asset references across sections
+
+---
+
 ## 🚀 [3.0.5] – 08/01/2026
 ![badge](https://img.shields.io/badge/v3.0.5-08--01--2026-207fef?logo=Git&logoColor=white)
 
