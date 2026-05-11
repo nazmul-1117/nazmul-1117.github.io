@@ -292,7 +292,13 @@
   }
 
   .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
+    min-width: auto;
+    text-align: justify;
   }
 
   .name {
@@ -301,7 +307,7 @@
 
   .role {
     font-size: 1.5rem;
-    min-height: auto;
+    min-height: 1.7rem;
   }
 
   .bio {
@@ -365,5 +371,12 @@
   .pic-div {
     width: 180px;
     height: 180px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .name {
+    font-size: 2rem;
   }
 }

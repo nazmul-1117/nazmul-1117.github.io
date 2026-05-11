@@ -6,9 +6,39 @@
 
 ---
 
+## [v3.1.1] - May 11, 2026
+
+![badge](https://img.shields.io/badge/v3.1.1-11--05--2026-FFF117?logo=Git\&logoColor=white)
+
+### Improved
+- Enhanced overall UX and mobile responsiveness.
+- Refined layout behavior for smaller screens.
+- Improved typography and text readability.
+
+### Updated
+- Changed CV button label from "Download CV" to "View".
+- Updated email link to use Gmail compose URL for better compatibility.
+- Fixed CV asset path references.
+- Updated contact section image asset.
+- Improved home section flex layout and responsive text sizing.
+- Adjusted role section spacing/min-height behavior.
+- Updated back-to-top button accent color to green (`#01bb29`).
+
+### Style Changes
+- Added justified text alignment for about section paragraphs.
+- Improved contact form button styling:
+  - removed borders
+  - added border radius
+- Cleaned unused/commented CSS blocks.
+
+### Maintenance
+- Updated `.gitignore`:
+  - added `*.code-workspace`
+  - clarified VS Code ignore rules
+
 ## 🚀 [3.1.0] – May 10, 2026
 
-![badge](https://img.shields.io/badge/v3.1.0-08--10--2026-408A71?logo=Git\&logoColor=white)
+![badge](https://img.shields.io/badge/v3.1.0-10--05--2026-408A71?logo=Git\&logoColor=white)
 
 ### ✨ Features
 

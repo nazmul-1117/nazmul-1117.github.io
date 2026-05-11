@@ -101,49 +101,6 @@
   color: var(--text-color);
 }
 
-/* ===== Button Container ===== */
-/* .about-btns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 24px;
-} */
-
-/* ===== Button Styles ===== */
-/* .stylish-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 28px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  background: var(--secondary-gradient);
-  border: 2px solid transparent;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.stylish-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px var(--secondary-shadow-color);
-} */
-
-/* Outline variant for "View Projects" */
-/* .stylish-btn.outline {
-  background: transparent;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.stylish-btn.outline:hover {
-  background: var(--primary-color);
-  color: #fff;
-} */
-
 /* ===== Contact Info ===== */
 .about-contact-info {
   margin-top: 20px;
@@ -214,7 +171,7 @@
     text-align: center;
     gap: 35px;
   }
-  .about-intro { text-align: center; max-width: 100%; }
+  .about-intro { text-align: justify; max-width: 100%; }
   .about-picture-circle { width: 280px; height: 280px; margin-bottom: 5px; }
   .about-btns { justify-content: center; }
 }
@@ -226,4 +183,12 @@
   .about-intro h1 { font-size: 1.9rem; }
   .about-intro p { font-size: 1rem; }
   .stylish-btn { padding: 10px 20px; font-size: 0.95rem; }
+}
+
+@media (max-width: 397px) {
+  .about-intro h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.9rem; 
+  }
 }

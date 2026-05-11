@@ -113,6 +113,8 @@
     color: var(--accent-color);
 
     transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
 }
 
 .contact-form .btn i {

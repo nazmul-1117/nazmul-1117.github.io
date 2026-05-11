@@ -1,8 +1,9 @@
 # Ignore JavaScript files
 script.js
 
-# VSCode settings folder
+# VS Code
 .vscode/
+*.code-workspace
 
 # CSS files
 responsiv_home.css
