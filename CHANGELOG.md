@@ -6,6 +6,44 @@
 
 ---
 
+## [3.3.0] - May 18, 2026
+
+![badge](https://img.shields.io/badge/v3.2.0-18--06--2026-F07117?logo=Git\&logoColor=white)
+
+### 🚀 Added
+- Introduced **complete v1 static portfolio site**
+  - `v1/index.html`
+  - Core CSS styling
+  - Responsive CSS support
+  - Asset system (images, icons, social SVGs)
+  - README documentation for v1
+
+- Added **v2 project structure**
+  - Updated assets directory
+  - Improved styles architecture
+  - Added script support
+  - Enhanced README for v2 version
+
+- Added **Archive system improvements**
+  - Updated `archive.html`
+  - Enabled archive cards for version browsing
+  - Added navigation links to:
+    - `v1/index.html`
+    - `v2/index.html`
+  - Ensured both portfolio versions are accessible from archive page
+
+### 🔧 Changed
+- Improved project structure for better version separation
+- Enhanced maintainability of multi-version portfolio system
+- Refactored archive page to support historical version browsing
+
+### 📁 Project Structure Update
+- Added `v1/` full static snapshot
+- Added `v2/` upgraded portfolio version
+- Unified archive entry point for version comparison
+
+---
+
 ## [3.2.0] - May 18, 2026
 
 ![badge](https://img.shields.io/badge/v3.2.0-18--06--2026-0F7117?logo=Git\&logoColor=white)

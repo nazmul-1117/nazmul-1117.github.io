@@ -1,0 +1,98 @@
+#educations{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: var(--education-bg);
+}
+
+.educations-title{
+    height: 10vh;
+    text-align: center;
+    color: var(--title-text-color);
+    line-height: 10vh;
+}
+
+/* 2nd div main content */
+.educations-content{
+    height: auto;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5vh 2vw;
+}
+
+/* main content 1st column */
+.educations-content-academy{
+    width: 60%;
+    flex-basis: 60%;
+}
+
+/* main content 2nd column */
+.educations-content-online{
+    width: 40%;
+    flex-basis: 40%;
+}
+
+/* academy details background */
+.academy{
+    display: flex;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 30%;
+    margin: 5px;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.academy a{
+    text-decoration: none;
+}
+
+.academy-pic{
+    height: 100%;
+    width: 30%;
+}
+
+.academy-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* academic name and position */
+.academy-content{
+    width: 70%;
+    height: 100%;
+    padding: 5px;
+}
+
+.academy-content h2{
+    margin: 5px 0px;
+    color: #ff8c00;
+}
+
+.academy-content h3{
+    color: #3801b8;
+}
+
+.academy-content p{
+    margin: 5px 0px;
+    color: #7ce79e;
+}
+
+.bsc{
+    z-index: 0;
+}
+
+.hsc{
+    z-index: 0;
+}
+
+.ssc{
+    z-index: 0;
+}

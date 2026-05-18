@@ -1,0 +1,224 @@
+/* =========================================
+   LARGE DESKTOP DEVICES
+   1400px and above
+========================================= */
+
+@media screen and (min-width: 1400px){
+
+    .main-div{
+        width: 85%;
+    }
+
+    .about-me h1{
+        font-size: 56px;
+    }
+
+    .about-me p{
+        font-size: 18px;
+    }
+
+    .picture img{
+        max-width: 360px;
+    }
+}
+
+
+/* =========================================
+   DESKTOP & LAPTOP
+   992px - 1399px
+========================================= */
+
+@media screen and (max-width: 1399px){
+
+    .main-div{
+        width: 92%;
+    }
+
+    .about-me{
+        width: 65%;
+    }
+
+    .picture{
+        width: 30%;
+    }
+
+    .about-me h1{
+        font-size: 46px;
+    }
+
+    .menu-list{
+        gap: 5px;
+    }
+}
+
+
+/* =========================================
+   TABLET DEVICES
+   768px - 991px
+========================================= */
+
+@media screen and (max-width: 991px){
+
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .intro-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me{
+        width: 100%;
+    }
+
+    .picture{
+        width: 100%;
+    }
+
+    .picture img{
+        max-width: 300px;
+    }
+
+    .info-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col1,
+    .col2,
+    .col3{
+        width: 100%;
+    }
+
+    .about-me h1{
+        font-size: 40px;
+    }
+
+    .about-me h3{
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================
+   MOBILE DEVICES
+   576px - 767px
+========================================= */
+
+@media screen and (max-width: 767px){
+
+    .main-div{
+        width: 98%;
+        padding: 10px;
+    }
+
+    .header{
+        padding: 15px 10px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .menu-list{
+        gap: 0;
+    }
+
+    .menu-list li a{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .about-me{
+        padding: 20px;
+    }
+
+    .about-me h1{
+        font-size: 32px;
+    }
+
+    .about-me h3{
+        font-size: 18px;
+    }
+
+    .about-me p{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .picture img{
+        max-width: 250px;
+    }
+
+    .btn{
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    .social-button{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE DEVICES
+   below 576px
+========================================= */
+
+@media screen and (max-width: 575px){
+
+    .about-me h1{
+        font-size: 28px;
+    }
+
+    .about-me h3{
+        font-size: 16px;
+    }
+
+    .about-me p{
+        font-size: 14px;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list li{
+        margin: 5px 0;
+    }
+
+    .picture img{
+        max-width: 220px;
+    }
+
+    .social-buttons{
+        gap: 10px;
+    }
+
+    .social-button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-text{
+        font-size: 12px;
+    }
+}

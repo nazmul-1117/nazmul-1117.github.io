@@ -1,6 +1,6 @@
 # 🌐 Md. Nazmul Hossain — Developer Portfolio
 
-[![Version](https://img.shields.io/badge/Version-3.2.0-F07117?logo=Git&logoColor=green)](https://github.com/nazmul-1117/nazmul-1117.github.io/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-3.3.0-F07117?logo=Git&logoColor=green)](https://github.com/nazmul-1117/nazmul-1117.github.io/blob/main/CHANGELOG.md)
 [![GitHub repo size](https://img.shields.io/github/repo-size/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io)
 [![Issues](https://img.shields.io/github/issues/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io)
@@ -26,7 +26,6 @@
   - [🛠️ Tech Stack](#️-tech-stack)
   - [📁 Folder Structure](#-folder-structure)
   - [🧪 How to Run Locally](#-how-to-run-locally)
-  - [📊 GitHub Stats](#-github-stats)
   - [🔮 Future Improvements](#-future-improvements)
   - [🤝 Contributing](#-contributing)
   - [📄 License](#-license)
@@ -82,7 +81,7 @@
 portfolio/
 ├── index.html
 ├── style/
-│   └── \*.css                  # Section-specific stylesheets
+│   └── \*.css                 # Section-specific stylesheets
 ├── js/
 │   ├── main.js                # Animations and scroll behavior
 │   └── themeToggle.js         # Dark/light theme toggle
@@ -90,10 +89,14 @@ portfolio/
 │   ├── images/                # All image assets
 │   ├── resume.pdf             # Resume download
 │   └── favicon.ico            # Site favicon
+├── v1/                        # portfolio version 1
+│   └── index.html             
+├── v2/                        # portfolio version 2
+│   └── index.html             
 ├── LICENSE
 ├── README.md
 ├── .gitignore
-└── CNAME                     # For custom domain (optional)
+└── CNAME                       # For custom domain (optional)
 
 ```
 
@@ -112,52 +115,10 @@ Then simply open `index.html` in your browser, or use a Live Server plugin in VS
 
 ---
 
-## 📊 GitHub Stats<table>
-  <tr>
-    <td align="center" width="50%">
-      <!-- GitHub Stats Card -->
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-stats.vercel.app/api?username=nazmul-1117&show_icons=true&hide_border=true&theme=tokyonight"
-        />
-        <source
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          srcset="https://github-readme-stats.vercel.app/api?username=nazmul-1117&show_icons=true&hide_border=true&theme=light"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=nazmul-1117&show_icons=true&hide_border=true&theme=light"
-          alt="GitHub stats for nazmul-1117"
-          width="100%"
-        />
-      </picture>
-    </td>
-    <td align="center" width="50%">
-      <!-- Top Languages Card -->
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmul-1117&layout=compact&theme=tokyonight&langs_count=10&hide_border=true&bg_color=1e1e2f&title_color=FF73C6&text_color=FFFFFF&icon_color=FF73C6&custom_title=Most%20Used%20Languages"
-        />
-        <source
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmul-1117&layout=compact&theme=light&langs_count=10&hide_border=true&bg_color=ffffff&title_color=FF69B4&text_color=333333&icon_color=FF69B4&custom_title=Most%20Used%20Languages"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmul-1117&layout=compact&theme=light&langs_count=10&hide_border=true&bg_color=ffffff&title_color=FF69B4&text_color=333333&icon_color=FF69B4&custom_title=Most%20Used%20Languages"
-          alt="Most used languages by nazmul-1117"
-          width="100%"
-        />
-      </picture>
-    </td>
-  </tr>
-</table>
 
----
 
 ## 🔮 Future Improvements
 
-* 📝 Add a personal blog section for ML/DS writeups
 * 🌐 Add multi-language support (i18n)
 * 🧠 Integrate AI project demos or model visualizations
 * 🧾 Build a backend to serve dynamic content (Node/Express or Flask)

@@ -1,0 +1,157 @@
+@import "colorScheme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--background-primary);
+    color: var(--primary-text-color);
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+span {
+    color: #00ebb0;
+}
+
+.main-div {
+    width: 100%;
+    height: auto;
+    padding: 1vh;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--footer-bg);
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Social buttons container */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Individual social button */
+.social-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--social-button-bg);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Icon styling */
+.social-button img {
+    width: 55%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect (clean + modern) */
+.social-button:hover {
+    background-color: #006f77;
+    transform: translateY(-3px);
+}
+
+.social-button:hover img {
+    transform: scale(1.1);
+}
+
+/* Copyright section */
+.footer .copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--primary-text-color);
+}
+
+/* Copyright link */
+.copyright a {
+    text-decoration: none;
+    color: #bd0094;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #ff4dd2;
+}
+
+
+/* =========================
+   FLOATING BUTTON
+========================= */
+.floating-btn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #00bfff, #00ebb0);
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 9999;
+    position: fixed;
+}
+
+/* tooltip */
+.tooltip{
+    position: absolute;
+    right: 70px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.floating-btn:hover .tooltip{
+    opacity: 1;
+}
