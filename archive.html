@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmul | The Digital Lab</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="style/colorScheme.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <link rel="stylesheet" href="style/archive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html#home" class="logo">
+            <img id="theme-logo" src="assets/logo-light.png" alt="Logo">
+        </a>
+
+        <ul class="menu-list">
+            <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="index.html#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="index.html#skills"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="index.html#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="blog.html"><i class="fas fa-seedling"></i> Blog</a></li>
+            <li><a href="archive.html"><i class="fas fa-flask"></i> Lab Archive</a></li>
+            <li><a href="index.html#contacts"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="icon-bars" onclick="toggleMenuBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="archive">
+            <div class="archive-title">
+                <h1>The Digital Lab & Ecosystem</h1>
+                <p>An archive of engineering experiments, models, performance tracks, and past configurations.</p>
+            </div>
+
+            <div class="archive-content-box">
+
+                <div class="archive-card" data-aos="zoom-in">
+                    <div class="archive-icon"><i class="fas fa-users"></i></div>
+                    <h3>Open-Source Collaborations</h3>
+                    <p>Explore production setups, deep learning implementations, hackathon prototypes, and
+                        community-driven repositories across my global developer dashboard.</p>
+                    <div class="archive-tech-tags">
+                        <span>Contributions</span><span>Git Ecosystem</span><span>Community</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117" target="_blank" rel="noopener noreferrer"
+                        class="archive-link">
+                        View GitHub Profile <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="archive-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>MedX-PneuNet: Explainable Diagnostics</h3>
+                    <p>A deep learning system utilizing MobileNetV2 and ResNet50 for Pneumonia binary classification on
+                        chest X-rays, featuring Grad-CAM heatmaps for real-time visual clinical interpretability.</p>
+                    <div class="archive-tech-tags">
+                        <span>PyTorch</span><span>Computer Vision</span><span>Grad-CAM</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/medx-pneunet" target="_blank"
+                        rel="noopener noreferrer" class="archive-link">
+                        Explore Model <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="archive-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Generative AI & RAG Lab</h3>
+                    <p>A repository containing custom Retrieval-Augmented Generation (RAG) pipelines, semantic token
+                        chunking experiments, vector databases, and an ongoing AI Resume Analyzer using GenAI
+                        frameworks.</p>
+                    <div class="archive-tech-tags">
+                        <span>GenAI</span><span>LangChain</span><span>Vector DB</span><span>ATS</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/Generative-AI" target="_blank" rel="noopener noreferrer"
+                        class="archive-link">
+                        View Pipelines <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="archive-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Plantive & Agri-Tech Ecosystems</h3>
+                    <p><strong>Team Lead:</strong> Automated plant care engine integrating Python/FastAPI backends with
+                        Google AI Studio smart APIs alongside a web network built to democratize farming data insights.
+                    </p>
+                    <div class="archive-tech-tags">
+                        <span>FastAPI</span><span>Python</span><span>Google AI Studio</span><span>IoT</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/plantive-ecosystem" target="_blank"
+                        rel="noopener noreferrer" class="archive-link">
+                        Inspect Architecture <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="archive-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Kingfisher Android Browser</h3>
+                    <p>A standalone privacy-centric Android browser engineered from scratch in Kotlin using Android
+                        Studio. Built on top of Mozilla's GeckoView engine to enforce sandboxing and tracker blocking.
+                    </p>
+                    <div class="archive-tech-tags">
+                        <span>Kotlin</span><span>GeckoView</span><span>Android Studio</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/kingfisher-browser" target="_blank"
+                        rel="noopener noreferrer" class="archive-link">
+                        Decompile Source <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="archive-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Predictive Analytics & Sentiment Hub</h3>
+                    <p>Production pipelines featuring an IMDb Sentiment Classifier (85.4% accuracy via Naive Bayes)
+                        deployed on Render, and a multiple linear regression insurance indexing system (78% R² score).
+                    </p>
+                    <div class="archive-tech-tags">
+                        <span>Scikit-Learn</span><span>Streamlit</span><span>Pandas</span><span>Render</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/IMDb-Sentiment-App" target="_blank"
+                        rel="noopener noreferrer" class="archive-link">
+                        Analyze Metrics <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="archive-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>BitGuard & Desktop System Utilities</h3>
+                    <p>Native cross-platform desktop applications engineered using JavaFX. Featuring BitGuard—an
+                        algorithmic tool verifying data payloads via custom CRC loops, and MediOxide prescription
+                        system.</p>
+                    <div class="archive-tech-tags">
+                        <span>JavaFX</span><span>MySQL</span><span>JDBC</span><span>Algorithms</span>
+                    </div>
+                    <a href="https://github.com/nazmul-1117/BitGuard-an-Error-Detection-and-Correction-Toolkit"
+                        target="_blank" rel="noopener noreferrer" class="archive-link">
+                        Review Source <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- <div class="archive-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="archive-icon"><i class="fas fa-history"></i></div>
+                    <h3>Portfolio Ecosystem v1.0.0</h3>
+                    <p>A look back at the original layout foundation, baseline structural scripts, and legacy interface
+                        choices that kicked off my personal web environment development.</p>
+                    <div class="archive-tech-tags">
+                        <span>Vanilla HTML</span><span>Legacy CSS</span><span>Static Layout</span>
+                    </div>
+                    <a href="#" class="archive-link">Visit v1 Layout <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="archive-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="archive-icon"><i class="clock fa-solid fa-clock-rotate-left"></i></div>
+                    <h3>Portfolio Ecosystem v2.0.0</h3>
+                    <p>The secondary optimization release featuring early modular stylesheet structures, CSS variable
+                        declarations, responsive flex grids, and primitive theme switching experiments.</p>
+                    <div class="archive-tech-tags">
+                        <span>CSS Variables</span><span>Modular Systems</span><span>Flexbox</span>
+                    </div>
+                    <a href="#" class="archive-link">Visit v2 Layout <i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="scroll-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="footer-row">
+            <div class="address">
+                📍 Dhaka, Bangladesh · <a href="mailto:223002089@student.green.ac.bd">223002089@student.green.ac.bd</a>
+            </div>
+
+            <div class="copyright">
+                © 2024–2026
+                <a href="https://github.com/nazmul-1117" target="_blank" rel="noopener noreferrer">
+                    Md. Nazmul Hossain
+                </a>.
+                All rights reserved.
+            </div>
+
+            <div class="social-buttons">
+                <a href="https://github.com/nazmul-1117" target="_blank"><img src="assets/image/Social/github.svg"
+                        alt="GitHub"></a>
+                <a href="https://www.kaggle.com/nazmul1117" target="_blank"><img src="assets/image/Social/kaggle.svg"
+                        alt="Kaggle"></a>
+                <a href="https://www.instagram.com/nazmul.1117/" target="_blank"><img
+                        src="assets/image/Social/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.hackerrank.com/profile/nazmul_1117" target="_blank"><img
+                        src="assets/image/Social/hackerrank.svg" alt="HackerRank"></a>
+                <a href="https://www.facebook.com/nazmul.1117" target="_blank"><img
+                        src="assets/image/Social/facebook.svg" alt="Facebook"></a>
+                <a href="https://x.com/nazmul_1117" target="_blank"><img src="assets/image/Social/x.svg"
+                        alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/themeToggle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

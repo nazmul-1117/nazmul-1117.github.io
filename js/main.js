@@ -1,35 +1,6 @@
-// === Mobile Menu Toggle ===
-function toggleMenuBar() {
-  document.querySelector('.navbar .menu-list')?.classList.toggle('active');
-}
-
-document.querySelectorAll('.navbar .menu-list a').forEach(link => {
-  link.addEventListener('click', () =>
-    document.querySelector('.navbar .menu-list')?.classList.remove('active')
-  );
-});
-
-// === Scroll-Based Navbar Highlighting ===
-function activateNavLink() {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.navbar .menu-list a');
-  let current = '';
-
-  sections.forEach(section => {
-    const top = section.offsetTop - 70;
-    const height = section.clientHeight;
-    if (scrollY >= top && scrollY < top + height) {
-      current = section.id;
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.toggle('active', link.href.includes(`#${current}`));
-  });
-}
-
-window.addEventListener('scroll', activateNavLink);
-document.addEventListener('DOMContentLoaded', activateNavLink);
+/* ==========================================================================
+   GLOBAL INTERACTIONS & PAGE ANIMATIONS (main.js)
+   ========================================================================== */
 
 // === Scroll-To-Top Button ===
 const scrollUp = document.querySelector('.scroll-up');
@@ -69,12 +40,9 @@ function erase() {
     setTimeout(type, 1000);
   }
 }
-type();
 
-// === Navbar Scroll Shadow Effect ===
-window.addEventListener('scroll', () => {
-  document.querySelector('.navbar')?.classList.toggle('scrolled', window.scrollY > 60);
-});
+// Run sequence instantly
+type();
 
 // === Education Tabs Activation ===
 document.addEventListener('DOMContentLoaded', () => {
@@ -94,5 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
       document.getElementById(link.dataset.tab)?.classList.add('active');
     });
+  });
+});
+
+
+// === Blog Modal Script Integration ===
+document.querySelectorAll('.blog-read-more[data-target]').forEach(triggerButton => {
+  triggerButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const modalId = triggerButton.getAttribute('data-target');
+    document.getElementById(modalId)?.classList.add('open');
+    document.body.style.overflow = 'hidden'; // Stop page scrolling background action
+  });
+});
+
+// Close mechanism
+document.querySelectorAll('.article-modal .close-modal-btn').forEach(closeButton => {
+  closeButton.addEventListener('click', () => {
+    closeButton.closest('.article-modal').classList.remove('open');
+    document.body.style.overflow = 'auto'; // Reset viewport parameters
   });
 });

@@ -6,6 +6,49 @@
 
 ---
 
+## [3.2.0] - May 18, 2026
+
+![badge](https://img.shields.io/badge/v3.2.0-18--06--2026-0F7117?logo=Git\&logoColor=white)
+
+### Added
+
+* Introduced `blog.html` for dedicated blog content and article presentation.
+* Added `archive.html` to organize and display archived blog posts.
+* Created blog-specific styling in `style/blog.css`.
+* Added archive page styling in `style/archive.css`.
+* Added multiple blog-related image assets for enhanced visual presentation.
+* Introduced `js/navbar.js` to manage navigation-specific behaviors separately.
+* Added blog modal open/close interactions in `js/main.js`.
+* Integrated AOS (Animate On Scroll) initialization across updated pages.
+* Added theme toggle wiring support for newly introduced pages.
+
+### Changed
+
+* Refactored navigation logic by moving:
+
+  * mobile menu toggle behavior
+  * active section highlighting
+    from `js/main.js` into the new `js/navbar.js`.
+* Updated `index.html` navigation links to include:
+
+  * Blog page
+  * Archive page
+* Updated HTML files to include the new navbar script.
+* Reorganized JavaScript responsibilities:
+
+  * `js/navbar.js` now handles navigation interactions.
+  * `js/main.js` now focuses on global UI interactions and modal handling.
+* Updated page structure and integrations to support new blog/archive sections consistently across the site.
+
+### Improved
+
+* Improved code maintainability through separation of concerns in JavaScript modules.
+* Enhanced scalability for future content expansion with dedicated blog and archive pages.
+* Improved user experience with cleaner navigation handling and modal interactions.
+* Better visual consistency through dedicated styling architecture for content sections.
+
+---
+
 ## [v3.1.1] - May 11, 2026
 
 ![badge](https://img.shields.io/badge/v3.1.1-11--05--2026-FFF117?logo=Git\&logoColor=white)
@@ -35,6 +78,8 @@
 - Updated `.gitignore`:
   - added `*.code-workspace`
   - clarified VS Code ignore rules
+
+---
 
 ## 🚀 [3.1.0] – May 10, 2026
 

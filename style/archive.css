@@ -1,0 +1,155 @@
+@import "colorScheme.css";
+
+/* ==========================================================================
+   Archive Section Base
+   ========================================================================== */
+#archive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 80px 5%;
+  scroll-margin-top: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Title Header */
+.archive-title {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.archive-title h1 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.archive-title p {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Archive Layout Grid (Refined 3-Column Grid)
+   ========================================================================== */
+.archive-content-box {
+  display: grid;
+  /* Forces exactly 3 equal columns on desktop screens */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px; /* Expanded slightly to give 3 cards plenty of breathing room */
+}
+
+/* Borderless Minimalist Frame */
+.archive-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 10px;
+}
+
+/* Interactive Icon Hub */
+.archive-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  width: fit-content;
+  transition: transform 0.25s ease;
+}
+
+/* Icon hover effect */
+.archive-card:hover .archive-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Text Content Presentation */
+.archive-card h3 {
+  color: var(--text-color);
+  font-size: 1.4rem; /* Adjusted slightly down for better 3-column title wrapping */
+  margin-bottom: 12px;
+}
+
+.archive-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  
+  /* MS Word Style Justification */
+  text-align: justify;
+  text-justify: inter-word; /* Ensures clean spaces between words, preventing awkward gaps */
+}
+
+/* Inline Technology Chips */
+.archive-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto; /* Pushes content down so links stay aligned bottom-wide */
+  margin-bottom: 20px;
+}
+
+.archive-tech-tags span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border-radius: 20px;
+  opacity: 0.85;
+  letter-spacing: 0.3px;
+  transition: opacity 0.2s ease;
+}
+
+.archive-card:hover .archive-tech-tags span {
+  opacity: 1;
+}
+
+/* External Resource Action Trigger */
+.archive-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  width: fit-content;
+}
+
+.archive-link i {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.archive-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .archive-content-box {
+    /* Smoothly drops down to a 2-column layout on smaller monitors/tablets */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .archive-title h1 {
+    font-size: 2rem;
+  }
+
+  .archive-content-box {
+    /* Drops down to a clean single column layout on phone screens */
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 35px;
+  }
+}

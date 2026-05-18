@@ -1,6 +1,6 @@
 # 🌐 Md. Nazmul Hossain — Developer Portfolio
 
-[![Version](https://img.shields.io/badge/Version-3.1.1-FFF117?logo=Git&logoColor=green)](https://github.com/nazmul-1117/nazmul-1117.github.io/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-3.2.0-F07117?logo=Git&logoColor=green)](https://github.com/nazmul-1117/nazmul-1117.github.io/blob/main/CHANGELOG.md)
 [![GitHub repo size](https://img.shields.io/github/repo-size/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io)
 [![Issues](https://img.shields.io/github/issues/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/nazmul-1117/nazmul-1117.github.io)](https://github.com/nazmul-1117/nazmul-1117.github.io)
